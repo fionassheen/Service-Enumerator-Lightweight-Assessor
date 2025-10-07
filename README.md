@@ -41,25 +41,25 @@ All results are compiled into:
 
 How to Run:
 
-Step 1: Setup
-# Clone repository
+# Step 1: Setup
+Clone repository
 git clone https://github.com/<your-username>/service-enumerator.git
 cd service-enumerator
 
-# Create virtual environment
+Create virtual environment
 python3 -m venv venv
 source venv/bin/activate
 
-# Install dependencies
+Install dependencies
 pip install python-nmap jinja2 rich
 
-Step 2: Run Scan
+# Step 2: Run Scan
 python3 run.py --target <TARGET_IP> --ports 1-1024 --out report.html
 
 Example:
 python3 run.py --target 127.0.0.1 --ports 21,22,80 --out report.html
 
-Step 3: View Results
+# Step 3: View Results
 Open the generated report.html file in any web browser to view:
  1. Target details
  2. Open ports
